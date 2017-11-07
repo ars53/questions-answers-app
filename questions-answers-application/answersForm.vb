@@ -2,7 +2,7 @@
     Protected db As New db
     Protected question_id As Integer
 
-    Private Sub New()
+    Public Sub New(ByRef qid As Integer)
 
         ' This call is required by the designer.
         InitializeComponent()
@@ -13,7 +13,7 @@
 
     Protected Sub LoadAnswers()
         db.sql = "Select * FROM answers where question_id = @question_id"
-        db.bind("@question_id", qid)
+        db.bind("@question_id", question_id)
         db.fill(dgvAnswers)
     End Sub
     Private Sub LoadAnswersToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AsdfToolStripMenuItem.Click

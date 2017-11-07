@@ -44,7 +44,9 @@ Public Class welcome
     End Sub
 
     Private Sub ShowAnswersToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ShowAnswersToolStripMenuItem.Click
-        LoadAnswers()
+        Dim answersform As New answersForm(getQuestionId())
+
+        answersform.ShowDialog()
 
 
     End Sub
