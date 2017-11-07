@@ -8,12 +8,12 @@
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
-        question_id = qid
+        ' question_id = id
     End Sub
 
     Protected Sub LoadAnswers()
         db.sql = "Select * FROM answers where question_id = @question_id"
-        db.bind("@question_id", qid)
+        ''db.bind("@question_id", id)
         db.fill(dgvAnswers)
     End Sub
     Private Sub LoadAnswersToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AsdfToolStripMenuItem.Click
