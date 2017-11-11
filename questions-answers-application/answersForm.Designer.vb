@@ -25,6 +25,9 @@ Partial Class answersForm
         Me.dgvAnswers = New System.Windows.Forms.DataGridView()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.AsdfToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CreateAnswerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UpdateAnswerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DeleteAnswerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.dgvAnswers, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -39,7 +42,7 @@ Partial Class answersForm
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AsdfToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AsdfToolStripMenuItem, Me.CreateAnswerToolStripMenuItem, Me.UpdateAnswerToolStripMenuItem, Me.DeleteAnswerToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(607, 24)
@@ -51,6 +54,24 @@ Partial Class answersForm
         Me.AsdfToolStripMenuItem.Name = "AsdfToolStripMenuItem"
         Me.AsdfToolStripMenuItem.Size = New System.Drawing.Size(89, 20)
         Me.AsdfToolStripMenuItem.Text = "LoadAnswers"
+        '
+        'CreateAnswerToolStripMenuItem
+        '
+        Me.CreateAnswerToolStripMenuItem.Name = "CreateAnswerToolStripMenuItem"
+        Me.CreateAnswerToolStripMenuItem.Size = New System.Drawing.Size(95, 20)
+        Me.CreateAnswerToolStripMenuItem.Text = "Create Answer"
+        '
+        'UpdateAnswerToolStripMenuItem
+        '
+        Me.UpdateAnswerToolStripMenuItem.Name = "UpdateAnswerToolStripMenuItem"
+        Me.UpdateAnswerToolStripMenuItem.Size = New System.Drawing.Size(99, 20)
+        Me.UpdateAnswerToolStripMenuItem.Text = "Update Answer"
+        '
+        'DeleteAnswerToolStripMenuItem
+        '
+        Me.DeleteAnswerToolStripMenuItem.Name = "DeleteAnswerToolStripMenuItem"
+        Me.DeleteAnswerToolStripMenuItem.Size = New System.Drawing.Size(94, 20)
+        Me.DeleteAnswerToolStripMenuItem.Text = "Delete Answer"
         '
         'answersForm
         '
@@ -73,4 +94,7 @@ Partial Class answersForm
     Friend WithEvents dgvAnswers As DataGridView
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents AsdfToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CreateAnswerToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents UpdateAnswerToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents DeleteAnswerToolStripMenuItem As ToolStripMenuItem
 End Class

@@ -81,6 +81,12 @@
     <Compile Include="answersForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="createAnswer.Designer.vb">
+      <DependentUpon>createAnswer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="createAnswer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CreateQuestion.Designer.vb">
       <DependentUpon>CreateQuestion.vb</DependentUpon>
     </Compile>
@@ -88,6 +94,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="db.vb" />
+    <Compile Include="UpdateAnswer.Designer.vb">
+      <DependentUpon>UpdateAnswer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateAnswer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UpdateQuestion.Designer.vb">
       <DependentUpon>UpdateQuestion.vb</DependentUpon>
     </Compile>
@@ -121,6 +133,9 @@
     <EmbeddedResource Include="answersForm.resx">
       <DependentUpon>answersForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="createAnswer.resx">
+      <DependentUpon>createAnswer.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreateQuestion.resx">
       <DependentUpon>CreateQuestion.vb</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +144,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateAnswer.resx">
+      <DependentUpon>UpdateAnswer.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateQuestion.resx">
       <DependentUpon>UpdateQuestion.vb</DependentUpon>
